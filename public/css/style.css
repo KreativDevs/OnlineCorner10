@@ -1,0 +1,637 @@
+/*
+------------------------------
+------------INDEX------------
+------------------------------
+1)Essentials
+	>html
+	>body
+	>scrollbar
+
+2)Hero
+	>Image
+	>Text
+	>title
+	>button
+
+3)Recents Iframe
+
+4)Menu Grid
+	>Grid Container
+	>Grid item
+
+5)Modern background animation
+
+6)Android app download
+
+7)Feedback
+
+8)Footer
+	>hr
+	>Item1 - Logo, Title, Tagline...
+	>Item2, Item3 - List grid: Contact us, About us
+	>End Tagline 
+*/
+
+/*------------------------------
+------------1)Essentials------------
+------------------------------*/
+@font-face {
+    font-family: PRegular;
+    src: url(../fonts/PSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PBlack;
+    src: url(../fonts/PSans-Black.ttf);
+}
+    
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: PRegular;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+	background-size: 130%;
+	background-image: url("../images/bannerbg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: -200px 0px;
+	overflow: overlay;
+}
+@media screen and (max-width: 1024px) {
+	body {
+		background-size: 180%;
+		background-position: -300px 0px;
+	}
+}
+@media screen and (max-width: 730px) {
+	body {
+		background-size: 250%;
+		background-position: -350px 0px;
+	}
+}
+@media screen and (max-width: 530px) {
+	body {
+		background-size: 350%;
+		background-position: -330px 0px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.boox {
+	background-color: white;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: rgb(95, 84, 84);
+}
+
+/*------------------------------
+------------2)Hero------------
+------------------------------*/
+.hero-image {
+	background-color: transparent;
+	height: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.hero-text img {
+	height: 200px;
+	margin-bottom: -35px;
+}
+
+#hero-title {
+	font-size: 50px;
+}
+@media screen and (max-width: 730px) {
+	#hero-title {
+		font-size: 37.4px;
+	}	
+}
+@media screen and (max-width: 530px) {
+	#hero-title {
+		font-size: 28.2px;
+	}	
+}
+
+
+#hero-subtext {
+	margin-top: -40px;
+}
+@media screen and (max-width: 730px) {
+	#hero-subtext {
+		margin-top: -26px;
+	}
+}
+@media screen and (max-width: 530px) {
+	#hero-subtext {
+		margin-top: -16px;
+	}
+}
+
+.hero-text button {
+	border: none;
+	margin-top: 43px;
+	outline: 0;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 10px;
+	color: black;
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.hero-text button:hover {
+	transition: 0.17s;
+	background-color: #555;
+	color: white;
+}
+
+/*------------------------------
+------------3)Recents Iframe------------
+------------------------------*/
+
+.iframe {
+	position: absolute;
+}
+
+/*------------------------------
+------------4)Menu grid------------
+------------------------------*/
+.grid-container {
+	display: grid;
+	margin: auto;
+	width: 55%;
+	padding-top: 40px;
+	grid-template-columns: auto auto auto;
+	gap: 30px;
+}
+@media screen and (max-width: 1024px){
+	.grid-container {
+		width: 80%;
+		margin: auto;
+		grid-template-columns: auto auto;
+	}
+}
+@media screen and (max-width: 730px){
+	.grid-container {
+		width: 90%;
+		margin: auto;
+		grid-template-columns: auto auto;
+	}
+}
+
+.grid-item {
+	zoom: 75%;
+	background: linear-gradient(to right, rgb(0, 183, 255), #319cf0);
+	background-size: 200% 400%;
+	border: 10px solid rgba(0, 0, 0, 0);
+	border-radius: 30px 30px 30px 30px;
+	padding: 25px;
+	padding-top: 75px;
+	box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.61);
+	width: 250px;
+	color: white;
+	font-size: 30px;
+	text-align: left;
+	transition: transform .2s;
+}
+@media screen and (max-width: 730px) {
+	.grid-item {
+		width: 215px;
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 530px) {
+	.grid-item {
+		zoom: 60%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.grid-item {
+		zoom: 50%;
+		width: 230px;
+		font-size: 30px;
+	}
+}
+
+.grid-item p {
+	margin-bottom: -5px;
+	margin-top: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.grid-item:hover {
+    font-weight: bold;
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, rgb(0, 183, 255), rgb(0, 183, 255), #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*------------------------------
+------------5)Modern background animations------------
+------------------------------*/
+
+/*---1---*/
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 30% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 30% 30%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 30% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 30% 30%;
+	}
+}
+
+@-o-keyframes gradient {
+	0% {
+		background-position: 30% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 30% 70%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 30% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 30% 30%;
+	}
+}
+
+/*------------------------------
+------------6)Android app download------------
+------------------------------*/
+.android-app-download {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	padding-bottom: 120px;
+	width: 48%;
+	height: auto;
+}
+@media screen and (max-width: 1024px) {
+	.android-app-download {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 720px) {
+	.android-app-download {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 530px) {
+	.android-app-download {
+		width: 95%;
+	}
+}
+
+.android-app-download img {
+	transition: transform .2s;
+	border-radius: 15px;
+	height: auto;
+	width: 100%;
+	box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.274);
+}
+
+.android-app-download :hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.03);
+}
+
+/*------------------------------
+------------8)Feedback------------
+------------------------------*/
+.feedback a{
+	display:block;
+	position:fixed;
+	bottom:10px;
+	left:5px;
+	padding:7px 5px;
+	border: none;
+	outline: 0;
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(0, 161, 224, 0.7);
+	text-align: center;
+	cursor: pointer;
+	transition: 0.14s;
+	box-shadow: 2px 2px 3px rgba(66, 63, 63, 0.8);
+	}
+
+.feedback a:hover {
+	opacity: 0.8;
+	box-shadow: 2px 2px 7px rgba(66, 63, 63, 0.97);
+}
+
+#button {
+	display: inline-block;
+	background-color: rgb(0, 161, 224, 0.7);
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 15px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+@media screen and (max-width: 1024px) {
+	#button {
+		
+	width: 40px;
+	height: 40px;
+	}
+}
+#button::after {
+	content: "\21EA";
+	font-family: FontAwesome;
+	font-size: 2.3em;
+	line-height: 45px;
+	color: #fff;
+}
+@media screen and (max-width: 1024px) {
+	#button::after {
+		font-size: 2em;
+		line-height: 40px;
+	}
+}
+#button:hover {
+	cursor: pointer;
+	background-color: rgb(40, 60, 87);
+}
+#button:active {
+	background-color: #555;
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*------------------------------
+------------8)Footer------------
+------------------------------*/
+
+#hr {
+	height: 7px;
+	margin: -3px 0px;
+	background: linear-gradient(304deg, #FF9933, #138808, #000080);
+	background-size: 200% 200%;
+	-webkit-animation: gradient 10s ease infinite;
+	-moz-animation: gradient 10s ease infinite;
+	animation: gradient 10s ease infinite;
+}
+
+.footer-dark {
+	padding: 50px 0;
+	color: #f0f9ff;
+	background-color: #282d32;
+  }
+  
+  .footer-dark ul {
+	padding: 0;
+	list-style: none;
+	line-height: 1.6;
+	font-size: 14px;
+  }
+  
+  .footer-dark ul a {
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
+  }
+
+  @media (max-width:767px) {
+	.footer-dark .item1, .item2 {
+	  text-align: center;
+	  padding-bottom: 20px;
+	}
+  }
+  
+#item1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#item1 img {
+	height: auto;
+	width: 13%;
+}
+@media screen and (max-width: 1024px) {
+	#item1 img {
+		width: 17%
+	}
+}
+@media screen and (max-width: 730px) {
+	#item1 img {
+		width: 23%
+	}
+}
+@media screen and (max-width: 530px) {
+	#item1 img {
+		width: 31%
+	}
+}
+
+#text-main {
+	font-size: 54px;
+	margin-top: -2px;
+}
+@media screen and (max-width: 1024px) {
+	#text-main {
+		font-size: 45px;
+	}
+}
+@media screen and (max-width: 730px) {
+	#text-main {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 530px) {
+	#text-main {
+		font-size: 35px;
+	}
+}
+
+#text-sub1 {
+	margin-top: -47px;
+	font-size: 15px;
+}
+@media screen and (max-width: 1024px) {
+	#text-sub1 {
+		margin-top: -37px;
+	}
+}
+@media screen and (max-width: 730px) {
+	#text-sub1 {
+		margin-top: -32px;
+	}
+}
+@media screen and (max-width: 730px) {
+	#text-sub1 {
+		margin-top: -22px;
+	}
+}
+
+#text-sub2 {
+	font-size: 12px;
+}
+
+#footer-grid {
+	display: grid;
+	width: 70%;
+	margin: auto;
+	grid-template-columns: auto auto auto;
+}
+@media screen and (max-width: 1024px) {
+	#footer-grid {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 730px) {
+	#footer-grid {
+		grid-template-columns: auto auto;
+	}
+}
+@media screen and (max-width: 530px) {
+	#footer-grid {
+		grid-template-columns: auto;
+	}
+}
+
+#item2 {
+	text-align: center;
+	float: left;
+}
+
+.dropbtn {
+	color: white;
+	opacity: 0.8;
+	font-family: Product Sans;
+	background-color: transparent;
+	font-size: 16px;
+	border: none;
+}
+  
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(70, 70, 70);
+	min-width: 160px;
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity: 0.8;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+.dropdown-content a {
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#item2 a {
+	color: white;
+	opacity: 0.8;
+}
+
+#item3 {
+	text-align: center;
+	float: right;
+}
+@media screen and (min-width: 730px) {
+	#item3 {
+		margin-left: 60px;
+	}
+}
+#item4 {
+	text-align: center;
+	float: right;
+}
+#footer-tagline {
+	text-align: center;
+	margin-top: 60px;
+	opacity: 0.9;
+}
+
+#footer-tagline-sub {
+	text-align: center;
+	font-size: 12px;
+	font-style: oblique;
+	opacity: 0.6;
+	margin-top: -14px;
+}

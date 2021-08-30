@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books - Online Corner 10</title>
+
+    <link href="../images/logo.png" rel="icon" />
+    <link rel="stylesheet" href="../css/style_sub.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="theme-color" content="#e4584d">
+</head>
+
+<body class="noSelect">
+    <a id="button"></a>
+    <div class="topnav">
+        <div id="chgtext">Books</div>
+        <div id="logoimg">
+            <a href="https://likisonlinecorner10.web.app">
+                <img width="40px" height="40px" float="right" src="../images/logo.png" />
+            </a>
+        </div>
+
+        <div id="title">
+            <a id="titlea" href="https://likisonlinecorner10.web.app"><b>ONLINE CORNER 10</b></a>
+        </div>
+    </div>
+<br> <br> <br>
+    <div class="grid-container">
+        <div class="leftbox">
+            <iframe scrolling="no" height="600px"
+                src="https://drive.google.com/embeddedfolderview?id=1I-6gJYERaYNuMda8nKW-vdtj3_DdcfYx#list"
+                frameborder="0" name="demo">
+            </iframe>
+        </div>
+
+        <div class="rightbox">
+            <iframe
+                src="https://docs.google.com/document/d/e/2PACX-1vTMpZY70M8eKyODEg3eaNAGlc4czUZ3kz63wa5TGkbl6KNxn7P-QQILNKUNSjmJYIfET8cGk9EU-2bE/pub?embedded=true"
+                 frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
+
+    <hr id="hr" style="height: 7px;
+	margin: -3px 0px;
+	background: linear-gradient(304deg, #50c471, #e4584d, #ffd427, #5b9ffe);
+	background-size: 200% 200%;
+	-webkit-animation: gradient 10s ease infinite;
+	-moz-animation: gradient 10s ease infinite;
+	animation: gradient 10s ease infinite;">
+    <div class="footer-dark">
+        <footer>
+           <div id="item1">
+              <img height="160px" src="../images/logo.png"></img>
+              <p id="text-main">Online Corner</p>
+              <p id="text-sub1">Online Classes made easier with Online Corner</p>
+              <p id="text-sub2"><i>This website is made only for grade 10 LIKIS students</i></p>
+           </div>
+  
+           <div id="footer-grid">
+              <div id="item2">
+                 <p>Contact Us</p>
+                 <ul>
+                    <li><a href="mailto:onlinecornerteam10@gmail.com">Email</a></li>
+                    <div class="dropdown">
+                       <button class="dropbtn">Phone</button>
+                       <div class="dropdown-content">
+                          <a style="color: white; opacity: 1;" href="tel:+919994644282">+91 99946 44282</a>
+                          <a style="color: white; opacity: 1;" href="tel:+919543201020">+91 95432 01020</a>
+                       </div>
+                    </div><br>
+  
+                    <a
+                       href="https://docs.google.com/forms/d/e/1FAIpQLSePapbuo0s1D2NKmuAFF8Z1Yoz7x_Wc6JVKTJgQp-KKrWMP6w/viewform?usp=sf_link">
+                       Feedback
+                    </a>
+                    <br>
+                </ul>
+              </div>
+  
+              <div id="item3">
+                 <p>Legal</p>
+                 <ul>
+                    <li><a
+                          href="https://docs.google.com/document/d/e/2PACX-1vRXxfoKWWCPp7nY0CWyMupPsG-iwBHPKEc7GQ9Fz_F9NOA3L0mgSYvi2sx-zzES6milYOmcodndsrM4/pub?embedded=true">
+                          Terms and Conditions</a></li>
+                    <li><a href="https://docs.google.com/document/d/e/2PACX-1vSO0AtqQM2wnSxiNs3uzvuY9uWNEHcunL8RCZbQUyqB3XLh7_BstKWkacnRjG6rcDsYBWFD8MjbcEyX/pub?embedded=true">
+                          Privacy Policy</a></li>
+                 </ul>
+              </div>
+  
+              <div id="item4">
+                 <p>About</p>
+                 <ul>
+                    <li><a href="https://likisonlinecorner10.web.app/about">Online Corner</a></li>
+                    <li><a target="_blank" href="https://littlekingdom.ac.in">Little Kingdom School</a></li>
+                 </ul>
+              </div>
+           </div>
+  
+           <p id="footer-tagline"></p>
+           <p id="footer-tagline-sub">Online Corner since 2020</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var btn = $("#button");
+
+      $(window).scroll(function () {
+         if ($(window).scrollTop() > 300) {
+            btn.addClass("show");
+         } else {
+            btn.removeClass("show");
+         }
+      });
+
+      btn.on("click", function (e) {
+         e.preventDefault();
+         $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+</body>
+
+</html>
