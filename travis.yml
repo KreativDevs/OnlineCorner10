@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "16.8.0"
+script:
+  - echo "Deploying!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --token 1//0gE1v-3BrsJRWCgYIARAAGBASNwF-L9IrA30j-2xFAJtBR5p0h2bzH_hGfkWSUJZnmtrsX9SZmLvIXa1cBNGuXQ-Ucl-79hwVBsw
