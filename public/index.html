@@ -162,20 +162,20 @@
          <p id="footer-tagline-sub">Online Corner since 2020</p>
    </footer>
    </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-   <script>
-      var btn = $("#button");
-      $(window).scroll(function () {
-         if ($(window).scrollTop() > 300) {
-            btn.addClass("show");
-         } else {
-            btn.removeClass("show");
-         }
-      });
-      btn.on("click", function (e) {
-         e.preventDefault();
-         $("html, body").animate({ scrollTop: 0 }, "300");
-      });
-   </script>
 </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   	<script>
+      		var btn = $("#button");
+      		$(window).scroll(function () {
+         	if ($(window).scrollTop() > 300) {
+            	btn.addClass("show");
+        	} else {
+            	btn.removeClass("show");
+         	}
+      		});
+      		btn.on("click", function (e) {
+         	e.preventDefault();
+         	$("html, body").animate({ scrollTop: 0 }, "300");
+      		});
+   	</script>
 </html>
