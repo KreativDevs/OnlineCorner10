@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "onlinecornerten",
     "public": "public",
     "ignore": [
       "firebase.json",
