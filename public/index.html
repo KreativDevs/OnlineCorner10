@@ -27,7 +27,7 @@
             'tip.state.subscribed': "You're subscribed to notifications",
             'tip.state.blocked': "You've blocked notifications",
             'message.prenotify': 'Click to subscribe to notifications',
-            'message.action.subscribed': "Thanks for subscribing!",
+            'message.action.subscribed': "Thanks for choosing Online Corner 10",
             'message.action.resubscribed': "You're subscribed to notifications",
             'message.action.unsubscribed': "You won't receive notifications again",
             'dialog.main.title': 'Manage Site Notifications',
@@ -63,7 +63,7 @@
               type: "category",
               autoPrompt: true,
               text: {
-                actionMessage: "We'd like to show you notifications for the latest news and updates.",
+                actionMessage: "We'd like to send you notifications to join classes and more.",
                 acceptButton: "Allow",
                 cancelButton: "Cancel",
   
@@ -74,24 +74,44 @@
               },
               delay: {
                 pageViews: 1,
-                timeDelay: 20
+                timeDelay: 3
               },
               categories: [
                 {
-                  tag: "politics",
-                  label: "Politics"
+                  tag: "10a_other",
+                  label: "10 A Other Classes"
                 },
                 {
-                  tag: "usa_news",
-                  label: "USA News"
+                  tag: "10b_other",
+                  label: "10 B Other Classes"
                 },
                 {
-                  tag: "world_news",
-                  label: "World News",
+                  tag: "10a_tamil",
+                  label: "10 A Tamil",
+                },
+		{
+                  tag: "10a_hindi",
+                  label: "10 A Hindi",
                 },
                 {
-                  tag: "culture",
-                  label: "Culture"
+                  tag: "10a_ai",
+                  label: "10 A AI"
+                },
+		{
+                  tag: "10a_fmm",
+                  label: "10 A FMM"
+                },
+		{
+                  tag: "10b_ai",
+                  label: "10 B AI"
+                },
+		{
+                  tag: "10b_fmm",
+                  label: "10 B FMM"
+                },
+		{
+                  tag: "misc",
+                  label: "Announcements, Homeworks, Miscellaneous"
                 },
               ]
             }
