@@ -1,220 +1,208 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Online Corner 10</title>
+	<head>
+    	<title>Online Corner 10</title>
 	<script type="module">
-   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-   const el = document.createElement('pwa-update');
-   document.body.appendChild(el);
-</script>
+   		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+   		const el = document.createElement('pwa-update');
+   		document.body.appendChild(el);
+	</script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-	var OneSignal = window.OneSignal || [];
-	OneSignal.push(function() {
-	OneSignal.init({
-      appId: "330024e3-3fe1-4fd2-8d2b-3e25c9288da5",
-      safari_web_id: "web.onesignal.auto.59acb98d-1515-493b-98a5-7443c569eebc",
-      promptOptions: {
-        slidedown: {
-          prompts: [
-            {
-              type: "category",
-              autoPrompt: true,
-              text: {
-                actionMessage: "We'd like to send you notifications to join classes and more.",
-                acceptButton: "Allow",
-                cancelButton: "Cancel",
-                /* CATEGORY SLIDEDOWN SPECIFIC TEXT */
-                negativeUpdateButton:"Cancel",
-                positiveUpdateButton:"Save Preferences",
-                updateMessage: "Update your push notification subscription preferences.",
-              },
-              delay: {
-                pageViews: 1,
-                timeDelay: 3
-              },
-              categories: [
-                {
-                  tag: "10a_other",
-                  label: "10 A Other Classes"
-                },
-                {
-                  tag: "10b_other",
-                  label: "10 B Other Classes"
-                },
-                {
-                  tag: "hindi",
-                  label: "Hindi Student",
-                },
-		{
-                  tag: "tamil",
-                  label: "Tamil Student",
-                },
-                {
-                  tag: "ai",
-                  label: "AI Student"
-                },
-		{
-                  tag: "fmm",
-                  label: "FMM Student"
-                },
-		{
-                  tag: "misc",
-                  label: "Announcements, Homeworks, Miscellaneous"
-                },
-              ]
-            }
-          ]
-        }
-      }
-    });
-  });</script>
-	
-  	<link href="images/logo.png" rel="icon" />
-	<meta name="robots" content="nofollow">
-	<meta name="keywords" content="Class, 10, Online, Corner, Class 10 Online Corner, LIKIS, Kreativ Devs, Little Kingdom School Tiruppur">
-	<meta name="google-site-verification" content="2r7qe2eRzwNb87VqvhCJNYyavV8WL806J-VHxPm8dMM" />
-  	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="HandheldFriendly" content="true">
-    	<meta name="theme-color" content="#e4584d">
-   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-   <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-</head>
+	<script>
+		var OneSignal = window.OneSignal || [];
+		OneSignal.push(function() {
+		OneSignal.init({
+      			appId: "330024e3-3fe1-4fd2-8d2b-3e25c9288da5",
+      			safari_web_id: "web.onesignal.auto.59acb98d-1515-493b-98a5-7443c569eebc",
+      			promptOptions: {
+			slidedown: {
+          		prompts: [
+           		 {
+              		type: "category",
+              		autoPrompt: true,
+              		text: {
+                	actionMessage: "We'd like to send you notifications to join classes and more.",
+                	acceptButton: "Allow",
+                	cancelButton: "Cancel",
+                	/* CATEGORY SLIDEDOWN SPECIFIC TEXT */
+                	negativeUpdateButton:"Cancel",
+                	positiveUpdateButton:"Save Preferences",
+               		updateMessage: "Update your push notification subscription preferences.",
+              		},
+              			delay: {
+                		pageViews: 1,
+                		timeDelay: 3
+              		},
+              		categories: [
+                		{
+                  		tag: "10a_other",
+                  		label: "10 A Other Classes"
+                		},
+                		{
+                  		tag: "10b_other",
+                 		label: "10 B Other Classes"
+                		},
+                		{
+                  		tag: "hindi",
+                  		label: "Hindi Student",
+                		},
+				{
+                  		tag: "tamil",
+                  		label: "Tamil Student",
+                		},
+                		{
+                  		tag: "ai",
+                  		label: "AI Student"
+               			},
+				{
+                  		tag: "fmm",
+                  		label: "FMM Student"
+                		},
+				{
+                  		tag: "misc",
+                  		label: "Announcements, Homeworks, Miscellaneous"
+                		},
+              		]
+            		}
+          		]
+        		}
+      		}
+    		});
+  		});
+	</script>
+		<link href="images/logo.png" rel="icon" />
+		<meta name="robots" content="nofollow">
+		<meta name="keywords" content="Class, 10, Online, Corner, Class 10 Online Corner, LIKIS, Kreativ Devs, Little Kingdom School Tiruppur">
+		<meta name="google-site-verification" content="2r7qe2eRzwNb87VqvhCJNYyavV8WL806J-VHxPm8dMM" />
+  		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+    		<meta name="theme-color" content="#e4584d">
+   		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+   		<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	</head>
 
-<body>
-   <div class="hero-image">
-      <div class="hero-text">
-         <img src="images/logo.png" />
-         <p id="hero-title">Online Corner</p>
-         <p id="hero-subtext">For Grade 10</p>
-         <button onclick="window.open('https://littlekingdom.ac.in', '_blank')">
-            Little Kingdom School</button>
-      </div>
-   </div>
-   <div class="boox">
-      <div class="iframeholder" style=" margin: 0;">
-         <div style=" padding-top:40px;" align="center">
-            <iframe style=" border-radius: 30px 30px 30px 30px; box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.61);"
-               src="recents.html" frameborder="no" scrolling="no">
-            </iframe>
-         </div>
-      </div>
+	<body>
+   		<div class="hero-image">
+      			<div class="hero-text">
+         			<img src="images/logo.png" />
+         			<p id="hero-title">Online Corner</p>
+         			<p id="hero-subtext">For Grade 10</p>
+         			<button onclick="window.open('https://littlekingdom.ac.in', '_blank')">Little Kingdom School</button>
+      			</div>
+  		</div>
+	   	<div class="boox">
+      			<div class="iframeholder" style=" margin: 0;">
+         			<div style=" padding-top:40px;" align="center">
+            				<iframe style=" border-radius: 30px 30px 30px 30px; box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.61);"
+					src="recents.html" frameborder="no" scrolling="no">
+            				</iframe>
+		 		</div>
+	      		</div>
 
-      <div class="grid-container">
-         <a href="/vocabulary">
-            <div class="grid-item" id="vo">
-               <p>Vocabulary</p>
+      		<div class="grid-container">
+         		<a href="/vocabulary">
+            			<div class="grid-item" id="vo">
+               			<p>Vocabulary</p>
+            			</div>
+         		</a>
+
+         		<a href="/time-table">
+            			<div class="grid-item" id="ti">
+               			<p>Time Table</p>
+            			</div>
+         		</a>
+
+         		<a href="/announcements">
+            			<div class="grid-item" id="an">
+               			<p>Announcements</p>
+            			</div>
+         		</a>
+
+         		<a href="/homeworks">
+            			<div class="grid-item" id="ho">
+               			<p>Homeworks</p>
+            			</div>
+         		</a>
+
+         		<a href="/notes">
+            			<div class="grid-item" id="no">
+               			<p>Notes</p>
+            			</div>
+         		</a>
+
+         		<a href="/books">
+            			<div class="grid-item" id="bo">
+              			<p>Books</p>
+            			</div>
+         		</a>
+
+         		<a href="/extras">
+            			<div class="grid-item" id="ex">
+               			<p>Extras</p>
+            			</div>
+         		</a>
+
+         		<a href="/about">
+           			<div class="grid-item" id="ab">
+               			<p>About</p>
+            			</div>
+         		</a>
+      		</div>
+      		<div class="android-app-download">
+         		<a target="_blank" href="https://www.mediafire.com/file/ohngl83a4gvtryt/Online_Corner_10_v1.0.apk/file">
+            		<img src="images/android-dl.png" height="300px" />
+         		</a>
+      		</div>
+      		<a id="button"></a>
             </div>
-         </a>
+   		<hr id="hr">
+   		<div class="footer-dark">
+      		<footer>
 
-         <a href="/time-table">
-            <div class="grid-item" id="ti">
-               <p>Time Table</p>
-            </div>
-         </a>
+         	<div id="item1">
+            		<img height="160px" src="images/logo.png">
+            		<p id="text-main">Online Corner</p>
+            		<p id="text-sub1">Online Classes made easier with Online Corner</p>
+            		<p id="text-sub2"><i>This website is made only for grade 10 LIKIS students</i></p>
+         	</div>
 
-         <a href="/announcements">
-            <div class="grid-item" id="an">
-               <p>Announcements</p>
-            </div>
-         </a>
+         	<div id="footer-grid">
+            		<div id="item2">
+              		<p>Contact Us</p>
+               		<ul>
+                  		<li><a href="mailto:onlinecornerteam10@gmail.com">Email</a></li>
 
-         <a href="/homeworks">
-            <div class="grid-item" id="ho">
-               <p>Homeworks</p>
-            </div>
-         </a>
+                  		<div class="dropdown">
+                     		<button class="dropbtn">Phone</button>
+                     		<div class="dropdown-content">
+                        	<a style="color: white; opacity: 1;">+91 99946 44282</a>
+                        	<a style="color: white; opacity: 1;">+91 95432 01020</a>
+                     		</div>
+                  </div> <br>
 
-         <a href="/notes">
-            <div class="grid-item" id="no">
-               <p>Notes</p>
-            </div>
-         </a>
-
-         <a href="/books">
-            <div class="grid-item" id="bo">
-               <p>Books</p>
-            </div>
-         </a>
-
-         <a href="/extras">
-            <div class="grid-item" id="ex">
-               <p>Extras</p>
-            </div>
-         </a>
-
-         <a href="/about">
-            <div class="grid-item" id="ab">
-               <p>About</p>
-            </div>
-         </a>
-      </div>
-      <div class="android-app-download">
-         <a target="_blank" href="https://www.mediafire.com/file/ohngl83a4gvtryt/Online_Corner_10_v1.0.apk/file">
-            <img src="images/android-dl.png" height="300px" />
-         </a>
-      </div>
-      <div class="feedback"><a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSePapbuo0s1D2NKmuAFF8Z1Yoz7x_Wc6JVKTJgQp-KKrWMP6w/viewform?usp=sf_link">
-            <img src="images/feedback.png" height="18px" />
-            Feedback</a>
-      </div>
-      <a id="button"></a>
-   </div>
-
-   <hr id="hr">
-   <div class="footer-dark">
-      <footer>
-
-         <div id="item1">
-            <img height="160px" src="images/logo.png">
-            <p id="text-main">Online Corner</p>
-            <p id="text-sub1">Online Classes made easier with Online Corner</p>
-            <p id="text-sub2"><i>This website is made only for grade 10 LIKIS students</i></p>
-         </div>
-
-         <div id="footer-grid">
-            <div id="item2">
-               <p>Contact Us</p>
-               <ul>
-                  <li><a href="mailto:onlinecornerteam10@gmail.com">Email</a></li>
-
-                  <div class="dropdown">
-                     <button class="dropbtn">Phone</button>
-                     <div class="dropdown-content">
-                        <a style="color: white; opacity: 1;">+91 99946 44282</a>
-                        <a style="color: white; opacity: 1;">+91 95432 01020</a>
-                     </div>
-                  </div><br>
-
-                  <a
-                     href="https://docs.google.com/forms/d/e/1FAIpQLSePapbuo0s1D2NKmuAFF8Z1Yoz7x_Wc6JVKTJgQp-KKrWMP6w/viewform?usp=sf_link">
-                     Feedback
-                  </a>
-                  <br>
-               </ul>
-            </div>
-
-            <div id="item3">
-               <p>Legal</p>
-               <ul>
-                  <li><a
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSePapbuo0s1D2NKmuAFF8Z1Yoz7x_Wc6JVKTJgQp-KKrWMP6w/viewform?usp=sf_link"> Feedback </a> <br>
+               		</ul>
+            	</div>
+            	<div id="item3">
+               		<p>Legal</p>
+               		<ul>
+                  	<li><a
                         href="https://docs.google.com/document/d/e/2PACX-1vRXxfoKWWCPp7nY0CWyMupPsG-iwBHPKEc7GQ9Fz_F9NOA3L0mgSYvi2sx-zzES6milYOmcodndsrM4/pub?embedded=true">
                         Terms and Conditions</a></li>
-                  <li><a href="https://docs.google.com/document/d/e/2PACX-1vSO0AtqQM2wnSxiNs3uzvuY9uWNEHcunL8RCZbQUyqB3XLh7_BstKWkacnRjG6rcDsYBWFD8MjbcEyX/pub?embedded=true">
+                  	<li><a href="https://docs.google.com/document/d/e/2PACX-1vSO0AtqQM2wnSxiNs3uzvuY9uWNEHcunL8RCZbQUyqB3XLh7_BstKWkacnRjG6rcDsYBWFD8MjbcEyX/pub?embedded=true">
                         Privacy Policy</a></li>
-               </ul>
-            </div>
+               		</ul>
+            	</div>
 
-            <div id="item4">
-               <p>About</p>
-               <ul>
-                  <li><a href="/about">Online Corner</a></li>
-                  <li><a href="https://littlekingdom.ac.in">Little Kingdom School</a></li>
-               </ul>
-            </div>
-         </div>
+            	<div id="item4">
+               		<p>About</p>
+               		<ul>
+                  	<li><a href="/about">Online Corner</a></li>
+                  	<li><a href="https://littlekingdom.ac.in">Little Kingdom School</a></li>
+               		</ul>
+            	</div>
+         	</div>
 
          <p id="footer-tagline"></p>
          <p id="footer-tagline-sub">Online Corner since 2020</p>
