@@ -62,7 +62,7 @@ body {
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
 	background-size: 130%;
-	background-image: url("../images/bannerbg.jpg");
+	background-image: url("../images/bannerbg.avif");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: -200px 0px;
