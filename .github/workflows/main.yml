@@ -1,7 +1,7 @@
   name: Deploy the main branch
 on: push
 jobs:
-  main:
+  build:
     name: Deploy to Firebase
     runs-on: ubuntu-latest
     steps:
