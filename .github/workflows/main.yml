@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Deploy to Firebase
+    name: Deploy to Online Corner 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
