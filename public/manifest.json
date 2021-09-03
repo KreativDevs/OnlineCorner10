@@ -16,7 +16,7 @@
   "start_url": "/",
   "background_color": "#e4584d",
   "display": "standalone",
-  "scope": "",
+  "scope": "/",
 "theme_color": "#3367D6",
   "description": "Online Corner 10",
   "shortcuts": [
