@@ -142,6 +142,36 @@ body {
 	font-size: 18px; padding-right: 20px;
 }
 
+.back_btn {
+    border-radius: 50%;
+    height: 35px;
+    margin-top: -1px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+    color: #fff;
+    background-color: #6300ee00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.back_btn:hover {
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+span.ripple {
+    position: absolute;
+    /* The absolute position we mentioned earlier */
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 #menuimg{
 	float:left;
 	cursor:pointer;
