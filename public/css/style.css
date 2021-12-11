@@ -35,16 +35,7 @@
 /*------------------------------
 ------------1)Essentials------------
 ------------------------------*/
-@font-face {
-    font-family: PRegular;
-    src: url(../fonts/PSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: PBlack;
-    src: url(../fonts/PSans-Black.ttf);
-}
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); 
 html {
 	height: 100%;
 }
@@ -52,7 +43,7 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	font-family: PRegular;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -571,7 +562,7 @@ a {
 .dropbtn {
 	color: white;
 	opacity: 0.8;
-	font-family: Product Sans;
+	font-family: 'Montserrat', sans-serif;
 	background-color: transparent;
 	font-size: 16px;
 	border: none;
