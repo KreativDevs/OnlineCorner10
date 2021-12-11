@@ -1,7 +1,7 @@
 {
-    "name": "Online Corner 10",
-    "short_name": "Online Corner",
-    "icons": [
+  "name": "Online Corner 10",
+  "short_name": "Online Corner",
+  "icons": [
     {
       "src": "/images/192x192-logo.png",
       "type": "image/png",
@@ -15,9 +15,9 @@
   ],
   "start_url": "/",
   "background_color": "#e4584d",
-  "display": "standalone",
+  "display": "minimal-ui",
   "scope": "/",
-"theme_color": "#3367D6",
+  "theme_color": "#3367D6",
   "description": "Online Corner 10",
   "shortcuts": [
     {
@@ -25,14 +25,24 @@
       "short_name": "Vocabulary",
       "description": "Word of the day in English and Hindi, Idiom and Quotes",
       "url": "/vocabulary",
-      "icons": [{ "src": "/images/192x192-logo.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/images/192x192-logo.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Time Table - Online Corner 10",
       "short_name": "Time Table",
       "description": "Hyperlinks Time Table with ID details",
       "url": "/time-table",
-      "icons": [{ "src": "/images/192x192-logo.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/images/192x192-logo.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
