@@ -35,7 +35,7 @@
 /*------------------------------
 ------------1)Essentials------------
 ------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans&display=swap');
 html {
 	height: 100%;
 }
@@ -43,7 +43,7 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -108,6 +108,7 @@ a {
 }
 
 .hero-text {
+	font-family: Montserrat;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -562,7 +563,7 @@ a {
 .dropbtn {
 	color: white;
 	opacity: 0.8;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	background-color: transparent;
 	font-size: 16px;
 	border: none;
