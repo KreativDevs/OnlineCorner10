@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: 
+
+Sitemap: https://onlinecornerten.web.app/simple-sitemap.xml
